@@ -3,8 +3,25 @@ package ba.unsa.etf.rpr;
 import java.util.ArrayList;
 
 public class Korpa {
+
     Artikl[] korpa = new Artikl[50];
     int brojArtikalaUKorpi;
+
+    public Artikl[] getKorpa() {
+        return korpa;
+    }
+
+    public void setKorpa(Artikl[] korpa) {
+        this.korpa = korpa;
+    }
+
+    public int getBrojArtikalaUKorpi() {
+        return brojArtikalaUKorpi;
+    }
+
+    public void setBrojArtikalaUKorpi(int brojArtikalaUKorpi) {
+        this.brojArtikalaUKorpi = brojArtikalaUKorpi;
+    }
 
     public boolean dodajArtikl(Artikl artikl) {
         if(brojArtikalaUKorpi==50) return false;

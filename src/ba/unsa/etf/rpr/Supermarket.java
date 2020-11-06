@@ -17,6 +17,22 @@ public class Supermarket {
 
     }
 
+    public Artikl[] getSupermarket() {
+        return supermarket;
+    }
+
+    public void setSupermarket(Artikl[] supermarket) {
+        this.supermarket = supermarket;
+    }
+
+    public int getBrojArtikalaUSupermarketu() {
+        return brojArtikalaUSupermarketu;
+    }
+
+    public void setBrojArtikalaUSupermarketu(int brojArtikalaUSupermarketu) {
+        this.brojArtikalaUSupermarketu = brojArtikalaUSupermarketu;
+    }
+
     public Artikl izbaciArtiklSaKodom(String kod) {
 
         for(int i=0; i<supermarket.length; i++) {
